@@ -119,18 +119,43 @@ getdata();
 
 </script>
 <body>
-    <div class="todo-container">
-         <h1>Todo List</h1>
-         <div class="input-section">
+  <h1 class = "header">Todo List</h1>
+  <div class="todo-container">
+   <div class="input-section">
+<div class = "inputbox">
 
-             <input type="text" class="title" id="title" placeholder="write your text"> </input>
+  <div class="wave-group">
+    <input required="" type="text" class="input" id="title" class="title">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">ti</span>
+      <span class="label-char" style="--index: 1">t</span>
+      <span class="label-char" style="--index: 2">l</span>
+      <span class="label-char" style="--index: 3">e</span>
+    </label>
+  </div>
+  <br>
+  
+  <div class="wave-group">
+    <input required="" type="text" class="input" id = "description" class="description">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">des</span>
+      <span class="label-char" style="--index: 1">cri</span>
+      <span class="label-char" style="--index: 2">pti</span>
+      <span class="label-char" style="--index: 3">on</span>
+    </label>
+  </div>
+</div>
              <br>
-             <input type="text" class="description" id="description" placeholder="write your description"></intput>
-             <br>
-             <div ><button class="button" onclick="onpress()">send todo</button>
-                <button class="button2" onclick="getdata()">get todo</button></div>
+             <div class="sendbutton" ><button class="button" onclick="onpress()">Send Todo</button>
+              
+              
             </div>
-                <div class="container" id="container"></div>
+            <div class="containerparent">
+
+              <div class="container" id="container"></div>
+            </div>
         </div>
 </body>
 </html>
